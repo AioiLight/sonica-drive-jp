@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+:root {
+    color-scheme: only light;
+    --color-background: #fff;
+    --color-text-primary: #121212;
+    --color-text-secondary: #444;
+    --color-primary: #2263BF;
+}
+
+:any-link {
+    color: var(--color-primary);
+}
+
+.b {
+    display: block;
+}
+
+.ib {
+    display: inline-block;
+}
+
+.wrapper {
+    max-inline-size: 520px;
+    margin-inline: auto;
+}
+
+.content-wrapper {
+    padding-inline: 12px;
+}
