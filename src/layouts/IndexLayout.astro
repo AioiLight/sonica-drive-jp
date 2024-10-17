@@ -1,0 +1,15 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro';
+import IndexHero from '@components/index/IndexHero.astro';
+
+import type { MarkdownLayoutProps } from "astro";
+type Props = MarkdownLayoutProps<{
+    title: string;
+}>;
+---
+<DefaultLayout {...Astro.props}>
+    <IndexHero />
+    <div class="content-wrapper">
+        <slot></slot>
+    </div>
+</DefaultLayout>
